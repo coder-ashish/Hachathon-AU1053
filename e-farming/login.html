@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Login Form | CodingLab </title>--->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+html, body{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+  background-image: url('https://www.theindiaforum.in/sites/default/files/field/image/2021/05/28/ramkumar-radhakrishnan-wikimedia-1622193304.jpeg' );
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 100%;
+    width: 100%;}
+::selection{
+  background: #ff80bf;
+
+}
+.container{
+  background: #fff;
+  max-width: 350px;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.container form .title{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+}
+.container form .title:before{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  left: 0px;
+  bottom: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+}
+.container form .input-box{
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.container form .input-box input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+.container form .underline::before{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+.container form .underline::after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.container form .button{
+  margin: 40px 0 20px 0;
+}
+.container .input-box input[type="submit"]{
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container .input-box input[type="submit"]:hover{
+  letter-spacing: 1px;
+  background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
+}
+.container .option{
+  font-size: 14px;
+  text-align: center;
+}
+.container .facebook a,
+.container .twitter a{
+  display: block;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.container .facebook i,
+.container .twitter i{
+  padding-right: 12px;
+  font-size: 20px;
+}
+.container .twitter a{
+  background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+.container .twitter a:hover{
+  background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+.container .facebook a{
+  background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+.container .facebook a:hover{
+  background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+
+ /* Navbar container */
+ .navbar {
+   background-color: aliceblue;
+  font-family: 'Teko', sans-serif;
+  color:rgb(6, 194, 69) ;
+    overflow: hidden;
+    background-color:none;
+    font-size: 30px;
+    border-radius: 50px;
+    text-size-adjust: 300px;
+  }
+  .tittel{
+    text-align: center;
+    
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(6, 194, 69);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px;
+    border-color:5, 156, 30 ;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 14px 16px;
+    color: rgb(6, 194, 69);
+    border: 2px;
+    border-color:5, 156, 30 ;
+    
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(5, 156, 30);
+    color: whitesmoke;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 0%;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(5, 156, 30);
+    color: white;
+    border-radius: 0%;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 0%;
+  }
+     </style>
+  </head>
+  <body>
+     
+    <header>
+
+      <h1 class="tittel"><img src="R.png" height="60px" width="60px" alt="">&nbsp;&nbsp; 𝓔-कृषि</h1>
+      
+  </header>
+  <div class="navbar">
+      <a href="Index.html">Home <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><i class="fa fa-home"></i></a>
+    </a>
+      <div class="dropdown">
+        <button class="dropbtn">Farming <i class="fa fa-leaf"></i></i>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="animal Husbandry.html">Animal husbandry</a>
+          <a href="pomology.html">Horticulture</a>
+          <a href="flori.html">Floriculture</a>
+          <a href="#">Agriculture</a>
+        </div>
+      </div>
+      <div class="dropdown">
+          <button class="dropbtn">Govt. Scheme <i class="fa fa-newspaper-o"></i>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Center Govt. Scheme</a>
+            <a href="Scheme.html">Sate Govt. Scheme</a>
+          </div>
+        </div>
+        <a href="Weather.html">Weather <i class="fa fa-cloud"></i></a>
+        <a href="login.html">Login <i class="fa fa-user-circle"></i></a>
+        <a href="#home">Registration <i class="fa fa-user-plus"></i></a>
+        <a href="Team Section html css.html">About Us <i class="fa fa-users"></i></a>
+        
+
+
+</div>
+    <div class="container">
+      <form action="#">
+        <div class="title">Login</div>
+        <div class="input-box underline">
+          <input type="text" placeholder="Enter Your Email" required>
+          <div class="underline"></div>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Enter Your Password" required>
+          <div class="underline"></div>
+        </div>
+        <div class="input-box button">
+          <input type="submit" name="" value="Continue">
+        </div>
+      </form>
+        <div class="option">or Connect With Social Media</div>
+        <div class="twitter">
+          <a href="#"><i class="fab fa-twitter"></i>Sign in With Twitter</a>
+        </div>
+        <div class="facebook">
+          <a href="#"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
+        </div>
+    </div>
+  </body>
+</html>
+

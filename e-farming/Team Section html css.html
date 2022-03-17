@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  
+<!--  Design by foolishdeveloper.com -->
+  
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <title>Team Section </title>
+  <style media="screen">
+
+html{
+  background-image: url('https://wallpaperaccess.com/full/659845.jpg' );
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: black;
+    height: 100%;
+    width: 100%;
+}
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Exo;
+   }
+   @font-face {
+     font-family: Exo;
+     src: url(./fonts/Exo2.0-Medium.otf);
+   }
+   
+   .main{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .profile-card{
+     position: relative;
+     font-family: sans-serif;
+     width: 200px;
+     height: 180px;
+     background: #fff;
+     padding: 30px;
+     border-radius: 50%;
+     box-shadow: 0 0 22px #3336;
+     transition: .6s;
+     margin: 0 25px;
+   }
+   .profile-card:hover{
+     border-radius: 10px;
+     height: 260px;
+   }
+   .profile-card .img{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     transition: .6s;
+     z-index: 99;
+   }
+   .profile-card:hover .img{
+     transform: translateY(-60px);
+   }
+   .img img{
+     width: 100%;
+     border-radius: 50%;
+     box-shadow: 0 0 22px #3336;
+     transition: .6s;
+   }
+   .profile-card:hover img{
+     border-radius: 10px;
+   }
+   .caption{
+     text-align: center;
+     transform: translateY(-80px);
+     opacity: 0;
+     transition: .6s;
+   }
+   .profile-card:hover .caption{
+     opacity: 1;
+   }
+   .caption h3{
+     font-size: 21px;
+     font-family: sans-serif;
+   }
+   .caption p{
+     font-size: 15px;
+     color: #0c52a1;
+     font-family: sans-serif;
+     margin: 2px 0 9px 0;
+   }
+   .caption .social-links a{
+     color: #333;
+     margin-right: 15px;
+     font-size: 21px;
+     transition: .6s;
+   }
+   .social-links a:hover{
+     color: #0c52a1;
+   }
+
+  /* Navbar container */
+  .navbar {
+    background: white;
+  font-family: 'Teko';
+  color:rgb(6, 194, 69) ;
+    overflow: hidden;
+    background-color:none;
+    font-size: 30px;
+    
+    text-size-adjust: 300px;
+  }
+  .tittel{
+    text-align: center;
+    background: white;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    font-family: 'Teko';
+    float: left;
+    font-size: 16px;
+    color: rgb(6, 194, 69);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 2px;
+    border-color:5, 156, 30 ;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 14px 16px;
+    color: rgb(6, 194, 69);
+    border: 2px;
+    border-color:5, 156, 30 ;
+    
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(5, 156, 30);
+    color: whitesmoke;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 0%;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(5, 156, 30);
+    color: white;
+    border-radius: 0%;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 0%;
+  }
+  </style>
+
+</head>
+
+<body>
+  
+  <header>
+
+    <h1 class="tittel"><img src="R.png" height="60px" width="60px" alt="">&nbsp;&nbsp; 𝓔-कृषि</h1>
+    
+</header>
+<div class="navbar">
+    <a href="Index.html">Home <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><i class="fa fa-home"></i></a>
+  </a>
+    <div class="dropdown">
+      <button class="dropbtn">Farming <i class="fa fa-leaf"></i></i>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="animal Husbandry.html">Animal husbandry</a>
+        <a href="pomology.html">Horticulture</a>
+        <a href="flori.html">Floriculture</a>
+        <a href="#">Agriculture</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Govt. Scheme <i class="fa fa-newspaper-o"></i>
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Center Govt. Scheme</a>
+          <a href="Scheme.html">Sate Govt. Scheme</a>
+        </div>
+      </div>
+      <a href="Weather.html">Weather <i class="fa fa-cloud"></i></a>
+      <a href="login.html">Login <i class="fa fa-user-circle"></i></a>
+      <a href="#home">Registration <i class="fa fa-user-plus"></i></a>
+      <a href="Team Section html css.html">About Us <i class="fa fa-users"></i></a>
+      
+
+
+</div>
+    <div class="main">
+        <div class="profile-card">
+            <div class="img">
+                <img src="vijeet hn.jpeg">
+            </div>
+            <div class="caption">
+                <h3>Vijeet Singh</h3>
+                <p>frontend Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="dekhsha hn.jpeg">
+            </div>
+            <div class="caption">
+                <h3>Deekshitha Reddy</h3>
+                <p>Content Writter</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+            <div class="img">
+                <img src="herro.jpeg">
+            </div>
+            <div class="caption">
+                <h3>Debashish Jena</h3>
+                <p>frontend Developer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card">
+          <div class="img">
+              <img src="sreyamk.jpg">
+          </div>
+          <div class="caption">
+              <h3>Sreya Palo</h3>
+              <p>Designer</p>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="profile-card">
+        <div class="img">
+            <img src="monkey.jpeg">
+        </div>
+        <div class="caption">
+            <h3>Mithilesh Mohanty</h3>
+            <p>Graphic Designer</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+      </div>
+
+</body>
+
+</html>

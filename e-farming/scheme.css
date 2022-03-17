@@ -1,0 +1,80 @@
+body{
+    background-image: url('https://ictfootprint.eu/sites/default/files/ictfootprinteu-webinar_4_0_1_1.jpg' );
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: black;
+    height: 100%;
+    width: 100%;
+    
+}
+.dropbox{
+    position: fixed;
+    bottom: 400px;
+    right: 1050px;
+    text-align: center;
+}
+.choose{
+    font-size: 25px;
+    text-align: center;
+    background: rgba(0, 255, 0, 0.568);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn2 {
+      right: 10px;
+     border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: white;
+    border-radius: -50px;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content1 {
+      overflow-y: scroll;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: 400px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content1 a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content1 a:hover {
+    color: white;
+    background-color: rgb(19, 168, 5);
+
+
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content1 {
+    display: block;
+    background-color: rgb(5, 214, 5);
+  }
